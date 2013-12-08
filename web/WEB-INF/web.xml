@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>TwAuthServlet</servlet-name>
+        <servlet-class>TwAuthServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FacebookServlet</servlet-name>
+        <servlet-class>FacebookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TwitterAuthServlet</servlet-name>
+        <servlet-class>TwitterAuthServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FacebookAlbums</servlet-name>
+        <servlet-class>GetFacebookAlbums</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TwAuthServlet</servlet-name>
+        <url-pattern>/TwAuthServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FacebookServlet</servlet-name>
+        <url-pattern>/FacebookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TwitterAuthServlet</servlet-name>
+        <url-pattern>/TwitterAuthServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FacebookAlbums</servlet-name>
+        <url-pattern>/FacebookAlbums</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
